@@ -1,0 +1,297 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(173, 216, 230, 0.726);
+}
+
+.links img{
+    height: 20px;
+    width: 20px;
+    
+
+    
+    
+}
+
+/* .links img :hover{
+transform: scale(1.5,1.5);
+} */
+.links img:hover{
+    transform: scale(1.1,1.1);
+}
+.links{
+    display: flex;
+    gap: 20px;
+    filter: hue-rotate(220deg);
+}
+
+
+
+
+
+/*...whole container..*/
+
+.contact-box{
+    max-width: 1024px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ 
+    height: 100%;
+    width: 700px;
+    
+    
+    
+}
+
+.contact-links{
+      width: 350px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px 0px 0px 10px;
+      flex-direction: column;
+      color: white;
+       background-color: darkblue;
+       
+      
+
+}
+.contact-form-wrapper{
+    width: 350px;
+    height: 250px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    position: relative;
+    
+    
+
+}
+.modal-content{
+       /* display: block; */
+       width: 710px;
+       height: 350px;
+         position: absolute;
+       /* right: 0px;
+       bottom: 0px; */
+       background-color: white;
+       /* border-radius: 10px 10px 10px 10px; */
+       border: none;
+       left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+       
+       
+
+
+}
+button{
+ /* margin-top: 150px; */
+ width: 100px;
+ height: 40px;
+ background-color: rgb(45, 72, 226);
+ border: none;
+ border-radius: 10px ;
+ color: white;
+ font-family: bold;
+ font-size: 15px;
+ cursor: cell;
+ 
+ 
+}
+input{
+    padding: 10px;
+    width: 600px;
+    /* margin: 15px; */
+   
+}
+ 
+.form-item{
+    width: fit-content;
+    margin: 20px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+    
+}  
+.form-item label{
+    position: absolute;
+    left: 10px;
+} 
+textarea{
+    height: 50px;
+    width: 620px;
+    
+    
+    /* margin-top: 20px; */
+}
+.submit-btn{
+    width: 100px;
+    margin-left: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 139, 0.616);
+    cursor: all-scroll;
+    
+    
+
+}
+input:focus{
+    
+    margin-top: 20px;
+    
+}
+   
+textarea:focus{
+    margin-top: 20px;
+}
+
+div#myModal{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+   background-color: gray;
+   
+   
+   
+}
+#myBtn:hover + .modal-content{
+
+    /* background-color: aquamarine;
+    display: none;
+    width: 500px;
+    height: 300px; */
+    
+
+}
+
+@media screen and (max-width :700px){
+
+    .contact-box{
+        max-width: 1024px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        margin-left: 20px;
+        height: 300px;
+        width: 700px;
+    }    
+
+    .contact-links{
+        width: 350px;
+        height: 300px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+        border-radius: 10px 10px 0px 0px;
+        flex-direction: column;
+        color: white;
+         background-color: darkblue;}
+
+
+         .contact-form-wrapper{
+            width: 350px;
+            height: 300px;
+            border-radius: 0px 0px 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            position: relative;
+         }
+         .modal-content{
+            /* display: block; */
+            width: 391px;
+            height: 332px;
+              position: absolute;
+            /* right: 0px;
+            bottom: 0px;  */
+            background-color: white;
+            /* border-radius: 10px 10px 10px 10px; */
+            border: none;
+            left: 38%;
+         top: 40%;
+         transform: translate(-50%, -50%);
+         } 
+         input{
+            padding: 14px;
+            width: 324px;
+           
+        }
+         
+        .form-item{
+            width: fit-content;
+            margin: 20px;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            
+            
+        }  
+        .form-item label{
+            position: absolute;
+            left: 10px;
+            top: 15px;
+        } 
+        textarea{
+            height: 63px;
+             width: 348px;
+        }
+        .submit-btn{
+            width: 100px;
+            margin-left: 163px;
+            margin-top: 3px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgba(0, 0, 139, 0.616);
+            cursor: all-scroll;
+            
+            
+        
+        }
+        input:focus{
+            
+            margin-top: 30px;
+            
+        }
+           
+        textarea:focus{
+            margin-top: 30px;
+        }
+        
+        div#myModal{
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+           background-color: gray;
+           
+           
+           
+        }     
+        span.close {
+            margin-left: 379px;
+            /* margin-top: 17px; */
+        }
+        }
+
+        
+
+
